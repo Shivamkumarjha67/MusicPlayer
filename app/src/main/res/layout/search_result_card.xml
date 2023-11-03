@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:padding="16dp"
+    android:background="@android:color/background_light">
+    
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="4dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@color/grey"
+            android:layout_gravity="center">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:id="@+id/musicImage"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_launcher_background"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:id="@+id/musicTitle"
+                android:text="Music Title"
+                android:textSize="18dp"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp"
+                android:textStyle="bold"
+                android:layout_gravity="center"/>
+
+            <ImageButton
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="@color/grey"
+                android:id="@+id/btnMusicPlay"
+                android:src="@android:drawable/ic_media_play"
+                android:background="@color/white"
+                android:layout_gravity="center"
+                app:tint="@color/black" />
+
+            <ImageButton
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:id="@+id/btnMusicPause"
+                android:backgroundTint="@color/grey"
+                android:src="@android:drawable/ic_media_pause"
+                android:visibility="gone"
+                android:background="@color/white"
+                android:layout_gravity="center"
+                app:tint="@color/black" />
+
+            <ImageButton
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:id="@+id/btnMusicStop"
+                android:backgroundTint="@color/grey"
+                android:src="@android:drawable/picture_frame"
+                android:visibility="gone"
+                android:background="@color/white"
+                android:layout_gravity="center"
+                app:tint="@color/black" />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
